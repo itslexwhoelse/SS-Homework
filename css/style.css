@@ -14,12 +14,32 @@
   position: relative; /*probably not the best way to do it but it works!*/
   top:-20px;
 }
-.blurredThing {
+.blurredThing { /* learned it from here https://stackoverflow.com/questions/36949747/make-video-fit-100-with-any-screen-resolution*/
   position: absolute;
-  width: 400%;
-  height: 400%; /*there has to be a better way, i want it to wrap my content*/
-  right: 0;
-  bottom: 0;
-  top: -100%; /*it left this white padding at the bottom hate that*/
+  display: flex;
+  left: 0;
+  top:0;                /*i kinda just fiddled around until something worked and spend way too much time making sure it would be legible on phones*/
+  right:0;
+  bottom:0;
+  width: 225vh !important;
+  height: auto !important;
+  overflow-x: clip;
+  overflow-y: hidden;
   z-index: -1;
+}
+figure {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+hr {
+  height: 1px;
+  background-color: black;
+  border-color: black;
 }

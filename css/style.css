@@ -21,8 +21,8 @@
   top:0;                /*i kinda just fiddled around until something worked and spend way too much time making sure it would be legible on phones*/
   right:0;
   bottom:0;
-  width: 225vh !important;
-  height: auto !important;
+  width: 225vh;
+  height: auto;
   overflow-x: clip;
   overflow-y: hidden;
   z-index: -1;
